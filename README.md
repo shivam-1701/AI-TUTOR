@@ -16,4 +16,4 @@ To run this project locally, follow these steps:
 If this is a GitHub repository, you can clone it using the following command:
 ```bash
 git clone https://github.com/shivam-1701/AI-TUTOR.git
-streamlit run pdf_extractor_new.py
+streamlit run pdf_extractor.py

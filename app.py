@@ -2,11 +2,13 @@ import streamlit as st
 import fitz  # PyMuPDF for PDF processing
 import re
 import openai
-import pandas as pd
+from dotenv import load_dotenv
+import os
 
-# Set your OpenAI API key
-openai.api_key = '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'
+load_dotenv()
 
+# Read the OpenAI API key from the environment variable
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 def extract_questions(pdf_path):
     """
